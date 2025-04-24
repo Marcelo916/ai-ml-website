@@ -1,0 +1,55 @@
+<%- include('partials/head.ejs') %>
+    <nav>
+        <a href="/">Overview</a>
+        <a href="/types">Types of AI</a>
+        <a href="/algorithms">Algorithms</a>
+        <a href="/ethics">Ethics</a>
+        <a href="/research" class="active">AI Research</a>
+        <a href="/quote">Random</a>
+    </nav>
+
+    <hr>
+
+    <br><br>
+
+    <main>
+        <article>
+            <h1>Latest AI Research</h1>
+            <figure class="AI-ML">
+                <img src="img/research.jpg" alt="Picture of a researcher">
+            </figure>
+            <br>
+            <p class="introduction">
+                The field of Artificial Intelligence is evolving, driven by research and groundbreaking studies.
+                Below, you can explore summaries of the five most recent research articles on AI. These articles talk
+                about the latest advancements
+                and explorations in the field of Artificial Intelligence and Machine Learning. Whether you are an
+                enthusiast, a professional, or simply curious about AI, these highlights
+                provide a view into the ongoing discussions and innovations shaping the future of technology.
+            </p>
+            <br>
+            <div>
+                <% if(articles && articles.length> 0) { %>
+                    <% articles.forEach(article=> { %>
+                        <div class="article-container">
+                            <h3 class="article-title">
+                                <%= article.title %>
+                            </h3>
+                            <p class="article-summary">
+                                <%= article.summary %>
+                            </p>
+                            <a class="article-link" href="<%= article.link %>">Read more</a>
+                        </div>
+                        <% }) %>
+                            <% } else { %>
+                                <p>No articles available at the moment.</p>
+                                <% } %>
+            </div>
+        </article>
+        <br><br>
+        <%- include('partials/footer.ejs') %>
+    </main>
+
+    </body>
+
+    </html>

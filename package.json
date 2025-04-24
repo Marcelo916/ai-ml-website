@@ -1,0 +1,19 @@
+{
+  "name": "hw4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "node-fetch": "^3.3.2",
+    "quote-guru": "^1.0.1",
+    "xml2js": "^0.6.2"
+  }
+}

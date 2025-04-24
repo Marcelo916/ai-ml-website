@@ -1,0 +1,35 @@
+<%- include('partials/head.ejs') %>
+    <nav>
+        <a href="/">Overview</a>
+        <a href="/types">Types of AI</a>
+        <a href="/algorithms">Algorithms</a>
+        <a href="/ethics">Ethics</a>
+        <a href="/research">AI Research</a>
+        <a href="/quote" class="active">Random</a>
+    </nav>
+
+    <hr>
+
+    <br><br>
+
+    <main>
+        <h1>Quote of the Day</h1>
+        <article>
+            <br><br>
+            <% if (quote) { %>
+                <blockquote>
+                    "<%= quote.quote %>"
+                        <footer>- <%= quote.author %>
+                        </footer>
+                </blockquote>
+                <% } else { %>
+                    <p>No quote available at the moment.</p>
+                    <% } %>
+                        <br><br><br><br>
+        </article>
+        <br><br>
+        <%- include('partials/footer.ejs') %>
+    </main>
+    </body>
+
+    </html>

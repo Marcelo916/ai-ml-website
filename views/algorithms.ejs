@@ -1,0 +1,81 @@
+<%- include('partials/head.ejs') %>
+
+    <nav>
+        <a href="/">Overview</a>
+        <a href="/types">Types of AI</a>
+        <a href="/algorithms" class="active">Algorithms</a>
+        <a href="/ethics">Ethics</a>
+        <a href="/research">AI Research</a>
+        <a href="/quote">Random</a>
+    </nav>
+
+    <hr>
+
+    <br><br>
+
+    <main>
+        <article>
+            <h1>Understanding Machine Learning Algorithms</h1>
+            <figure class="AI-ML">
+                <img src="img/algo.jpg" alt="Picture of algorithms">
+            </figure>
+
+            <p class="what-is-AI">Machine learning algorithms are coded sequences providing clear, step-by-step
+                instructions that machines execute to achieve specific objectives,
+                such as identifying patterns within complex data sets to help in making predictions or categorizing
+                information. These algorithms adapt and improve their accuracy by analyzing training data,
+                which is a representative subset of the broader dataset, allowing them to refine their outputs as they
+                get more data that more closely mirrors real-world conditions.
+                They vary in their approach and are categorized based on the machine learning tasks they perform, such
+                as supervised, unsupervised, and reinforcement learning.
+                Common techniques within these categories include regression and classification, which are crucial for
+                predicting outcomes, identifying anomalies, and recognizing similarities.</p>
+
+            <div>
+                    <h3 class="what-is-AI">1. Supervised Learning</h3>
+                    <p class="what-is-AI">In supervised learning, algorithms generate predictions using a dataset of labeled examples you
+                        supply, which is effective when the desired result is known in advance.</p>
+                    <p class="what-is-AI"><span class="ethics">Example:</span> if you input a dataset showing the population of cities over
+                        the past century, you can predict the population of a particular city four years into the future
+                        based on existing labels in the dataset such as population</p>
+                    <h3 class="what-is-AI">2. Unsupervised Learning</h3>
+                    <p class="what-is-AI">In unsupervised learning, the data provided does not come with predefined labels; instead, the
+                        algorithm categorizes the data by identifying patterns or describing its structure, making it
+                        suitable when the final outcome is not predetermined.</p>
+                    <p class="what-is-AI"><span class="ethics">Example:</span> consider when you submit customer data with the goal of
+                        segmenting customers based on their product preferences. Since the input data lacks labels,
+                        the algorithm itself determines the labels for the output by detecting and grouping similarities
+                        among the data points.</p>
+                    <h3 class="what-is-AI">3. Reinforcement Learning</h3>
+                    <p class="what-is-AI">Reinforcement learning employs algorithms that evolve through the consequences of their actions,
+                        enabling them to decide subsequent moves. Each action is followed by feedback,
+                        guiding the algorithm to assess if its decision was right, neutral, or wrong. This method is
+                        especially effective for automated systems required to make numerous minor decisions
+                        independently.</p>
+                    <p class="what-is-AI"><span class="ethics">Example:</span> the development of an autonomous vehicle. The goal is for
+                        the car to comply with traffic laws and ensure passenger safety. Through accumulated experiences
+                        and ongoing reinforcement,
+                        the vehicle learns crucial behaviors such as maintaining lane discipline, adhering to speed
+                        limits, and stopping for pedestrians.</p>
+            </div>
+            <figure class="AI-ML">
+                <img src="img/reinforcement.jpg" alt="Picture of reinforcement algorithm">
+            </figure>
+            <br><br>
+
+        </article>
+
+        <h2 class="references-title">References</h2>
+        <ul class="references">
+            <li><a href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-are-machine-learning-algorithms"
+                    target="_blank">Machine Learning Algorithms | Microsoft Azure</a></li>
+            <li><a href="https://www.ijsr.net/archive/v9i1/ART20203995.pdf" target="_blank">Machine Learning Algorithms
+                    - A Review</a></li>
+        </ul>
+        <br><br>
+        <%- include('partials/footer.ejs') %>
+    </main>
+
+</body>
+
+</html>
